@@ -25,7 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
           SizedBox(
             width: 140,
-            height: 220, // Set your desired width here
+            height: 222, // Set your desired width here
             child: Image.asset(
               AssetsImages.whatsAppLogo,
               fit: BoxFit.cover,
