@@ -5,14 +5,9 @@ import 'package:mentor_academy_live_task/core/themes/color_app.dart';
 import 'package:mentor_academy_live_task/core/themes/styles.dart';
 import 'package:mentor_academy_live_task/features/home/presentation/view/home.dart';
 
-class SplashScreen extends StatefulWidget {
+class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
 
-  @override
-  State<SplashScreen> createState() => _SplashScreenState();
-}
-
-class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return AnimatedSplashScreen(
