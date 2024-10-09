@@ -22,12 +22,20 @@ class _SplashScreenState extends State<SplashScreen> {
         children: [
           Image.asset(
             AssetsImages.whatsAppLogo,
-            width: 140,
-            height: 220,
+            width: 120,
+            height: 200,
             fit: BoxFit.cover,
           ),
+          SizedBox(height: 15),
+          Text(
+            "WhatsApp",
+            style: Styles.textStyle24,
+          ),
           SizedBox(height: 80),
-          Text("The best chat app of this century"),
+          Text(
+            "The best chat app of this century",
+            style: Styles.textStyle10,
+          ),
         ],
       ),
       splashIconSize: double.infinity, // Allow content to fill screen

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mentor_academy_live_task/features/splash_screen/splash_screen.dart';
+import 'package:mentor_academy_live_task/features/splash_screen/presentation/views/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
