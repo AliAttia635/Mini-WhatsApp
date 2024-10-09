@@ -20,44 +20,14 @@ class _SplashScreenState extends State<SplashScreen> {
       splash: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SizedBox(height: 245),
-          SizedBox(
+          Image.asset(
+            AssetsImages.whatsAppLogo,
             width: 140,
-            height: 222,
-            child: Image.asset(
-              AssetsImages.whatsAppLogo,
-              fit: BoxFit.cover,
-            ),
+            height: 220,
+            fit: BoxFit.cover,
           ),
-          SizedBox(height: 160),
+          SizedBox(height: 80),
           Text("The best chat app of this century"),
-          SizedBox(
-            height: 135,
-          ),
-          GestureDetector(
-            onTap: () {
-              Navigator.pushReplacement(
-                context,
-                MaterialPageRoute(builder: (context) => HomePage()),
-              );
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 15),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(32),
-                gradient: LinearGradient(
-                    colors: [ColorApp.secondryColor, ColorApp.primaryColor]),
-              ),
-              width: double.infinity,
-              height: 45,
-              child: Center(
-                child: Text(
-                  "continue",
-                  style: Styles.textStyle10.copyWith(color: Colors.white),
-                ),
-              ),
-            ),
-          ),
         ],
       ),
       splashIconSize: double.infinity, // Allow content to fill screen
