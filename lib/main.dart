@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mentor_academy_live_task/app_router.dart';
+import 'package:mentor_academy_live_task/core/constants/routing/routing.dart';
 import 'package:mentor_academy_live_task/features/splash_screen/presentation/views/splash_screen.dart';
 
 void main() {
@@ -18,7 +20,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         useMaterial3: true,
       ),
-      home: SplashScreen(),
+      onGenerateRoute: AppRouters.generateRoute,
+      initialRoute: Routing.init,
     );
   }
 }
