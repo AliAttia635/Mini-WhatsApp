@@ -1,5 +1,6 @@
 abstract class Routing {
   static const init = '/';
-  static const signUp = 'signUp';
-  static const login = 'login';
+  static const signUpRoute = 'signUp';
+  static const loginRoute = 'login';
+  static const homeRoute = 'home';
 }

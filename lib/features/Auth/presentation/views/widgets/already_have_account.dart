@@ -17,7 +17,7 @@ class AlreadyHaveAccount extends StatelessWidget {
         ),
         TextButton(
           onPressed: () =>
-              Navigator.pushReplacementNamed(context, Routing.login),
+              Navigator.pushReplacementNamed(context, Routing.loginRoute),
           child: Text(
             'Login here',
             style: Styles.textStyle16.copyWith(color: ColorApp.primaryColor),

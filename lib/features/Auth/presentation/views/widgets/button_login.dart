@@ -17,7 +17,7 @@ class ButtonLogin extends StatelessWidget {
         height: 50,
         onPressed: () {
           if (formKey.currentState!.validate()) {
-            Navigator.pushReplacementNamed(context, Routing.signUp);
+            Navigator.pushReplacementNamed(context, Routing.homeRoute);
           }
         },
       ),

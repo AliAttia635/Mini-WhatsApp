@@ -17,7 +17,7 @@ class RegisterText extends StatelessWidget {
         ),
         TextButton(
           onPressed: () =>
-              Navigator.pushReplacementNamed(context, Routing.signUp),
+              Navigator.pushReplacementNamed(context, Routing.signUpRoute),
           child: Text(
             'Register here',
             style: Styles.textStyle16.copyWith(color: ColorApp.primaryColor),

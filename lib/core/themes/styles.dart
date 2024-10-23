@@ -9,9 +9,15 @@ abstract class Styles {
   );
   static TextStyle textStyle10 = const TextStyle(
     color: ColorApp.primaryColor,
-    fontSize: 15,
+    fontSize: 10,
     fontWeight: FontWeight.w600,
   );
   static const TextStyle textStyle16 =
       TextStyle(fontSize: 16, color: Colors.black, fontWeight: FontWeight.w500);
+
+  static const TextStyle textStyle14 =
+      TextStyle(fontSize: 14, color: Colors.black, fontWeight: FontWeight.w500);
+
+  static const TextStyle textStyle22 =
+      TextStyle(fontSize: 22, color: Colors.black, fontWeight: FontWeight.w600);
 }
