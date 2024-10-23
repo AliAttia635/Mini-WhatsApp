@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mentor_academy_live_task/core/themes/color_app.dart';
 import 'package:mentor_academy_live_task/core/themes/styles.dart';
+import 'package:mentor_academy_live_task/features/calls/presentaion/views/calls_view.dart';
 import 'package:mentor_academy_live_task/features/chats/presentation/views/chat_view.dart';
 
 class HomeView extends StatefulWidget {
@@ -15,6 +16,8 @@ class HomeViewState extends State<HomeView> {
 
   final List<Widget> _screens = [
     const ChatsView(),
+    Scaffold(),
+    const CallsView(),
   ];
 
   void _onItemTapped(int index) {
@@ -36,19 +39,32 @@ class HomeViewState extends State<HomeView> {
             onPressed: () {},
             icon: const Icon(
               Icons.search,
-              size: 30,
-            ),
-          ),
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.more_vert,
-              size: 30,
+              size: 32,
             ),
           ),
           const SizedBox(
-            width: 2,
-          )
+            width: 4,
+          ),
+          PopupMenuButton<String>(
+            icon: const Icon(Icons.more_vert, size: 32),
+            itemBuilder: (BuildContext context) => <PopupMenuEntry<String>>[
+              const PopupMenuItem<String>(
+                value: 'New Group',
+                child: Text('New Group'),
+              ),
+              const PopupMenuItem<String>(
+                value: 'Profile',
+                child: Text('Profile'),
+              ),
+              const PopupMenuItem<String>(
+                value: 'Logout',
+                child: Text('Logout'),
+              ),
+            ],
+          ),
+          const SizedBox(
+            width: 12,
+          ),
         ],
       ),
       body: _screens[_selectedIndex],

@@ -5,17 +5,17 @@ import 'package:mentor_academy_live_task/core/constants/routing/routing.dart';
 import 'package:mentor_academy_live_task/features/splash_screen/presentation/views/splash_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const WhatsApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class WhatsApp extends StatelessWidget {
+  const WhatsApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'WhatsApp',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         useMaterial3: true,
