@@ -6,8 +6,8 @@ class CallsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: const CallsBody(),
+    return const Scaffold(
+      body: CallsBody(),
     );
   }
 }

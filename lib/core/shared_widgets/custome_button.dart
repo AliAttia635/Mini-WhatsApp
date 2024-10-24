@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mentor_academy_live_task/core/themes/color_app.dart';
 
 class CustomButton extends StatelessWidget {
   final String label;
@@ -30,10 +31,10 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-        backgroundColor: backgroundColor ?? Theme.of(context).primaryColor,
+        backgroundColor: backgroundColor ?? ColorApp.primaryColor,
         textStyle: TextStyle(
           color: textColor ?? Colors.white,
-        ), // Text color
+        ),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(borderRadius!),
         ),
@@ -41,9 +42,22 @@ class CustomButton extends StatelessWidget {
         minimumSize: Size(width ?? 0, height ?? 0),
       ),
       onPressed: onPressed,
-      child: Text(
-        label,
-        style: TextStyle(fontSize: fontSize, color: Colors.white),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Icon(
+            icon,
+            size: 28,
+            color: Colors.white,
+          ),
+          const SizedBox(
+            width: 10,
+          ),
+          Text(
+            label,
+            style: TextStyle(fontSize: fontSize, color: Colors.white),
+          ),
+        ],
       ),
     );
   }

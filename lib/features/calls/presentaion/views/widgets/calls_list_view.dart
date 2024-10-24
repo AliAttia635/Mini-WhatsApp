@@ -12,9 +12,9 @@ class CallsListView extends StatelessWidget {
       itemCount: 10,
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
-      itemBuilder: (context, index) => Padding(
-        padding: const EdgeInsets.only(top: 16.0),
-        child: const CallItem(),
+      itemBuilder: (context, index) => const Padding(
+        padding: EdgeInsets.only(top: 16.0),
+        child: CallItem(),
       ),
     );
   }

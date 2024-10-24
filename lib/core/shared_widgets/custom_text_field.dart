@@ -14,6 +14,7 @@ class CustomTextField extends StatelessWidget {
   final double borderRadius;
   final ValueChanged<String>? onChanged;
   final String? Function(String?)? validator;
+  final String? initialValue;
 
   const CustomTextField({
     super.key,
@@ -30,11 +31,13 @@ class CustomTextField extends StatelessWidget {
     this.onChanged,
     this.validator,
     this.errorText,
+    this.initialValue,
   });
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      initialValue: initialValue,
       validator: validator,
       controller: controller,
       obscureText: obscureText,

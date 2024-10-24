@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mentor_academy_live_task/core/constants/routing/routing.dart';
 import 'package:mentor_academy_live_task/core/themes/color_app.dart';
 import 'package:mentor_academy_live_task/core/themes/styles.dart';
 import 'package:mentor_academy_live_task/features/calls/presentaion/views/calls_view.dart';
@@ -26,6 +27,20 @@ class HomeViewState extends State<HomeView> {
     });
   }
 
+  void _onPopupMenuSelected(String value) {
+    switch (value) {
+      case 'New Group':
+        // Handle New Group action
+        break;
+      case 'Profile':
+        Navigator.pushNamed(context, Routing.profileRoute);
+        break;
+      case 'Logout':
+        // Handle Logout action
+        break;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,6 +61,7 @@ class HomeViewState extends State<HomeView> {
             width: 4,
           ),
           PopupMenuButton<String>(
+            onSelected: _onPopupMenuSelected,
             icon: const Icon(Icons.more_vert, size: 32),
             itemBuilder: (BuildContext context) => <PopupMenuEntry<String>>[
               const PopupMenuItem<String>(

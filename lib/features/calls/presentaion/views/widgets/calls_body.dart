@@ -17,7 +17,7 @@ class CallsBody extends StatelessWidget {
             Divider(),
             Text('Recent',
                 style: Styles.textStyle16.copyWith(color: Colors.grey)),
-            CallsListView(),
+            const CallsListView(),
           ],
         ),
       ),
