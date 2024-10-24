@@ -1,4 +1,4 @@
 class AssetsImages {
   static const whatsAppLogo = 'assets/images/logo.png';
-  static const profileImage = 'assets/images/profile_image.jpg';
+  static const profileImage = 'assets/images/profile_image2.jpg';
 }

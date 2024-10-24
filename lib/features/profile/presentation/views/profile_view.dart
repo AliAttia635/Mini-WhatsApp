@@ -15,11 +15,11 @@ class ProfileView extends StatelessWidget {
           style: Styles.textStyle24,
         ),
         iconTheme: const IconThemeData(
-          color: ColorApp.primaryColor, // Set the back arrow color to green
+          color: ColorApp.primaryColor,
         ),
       ),
-      body: const Padding(
-        padding: EdgeInsets.all(16.0),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
         child: ProfileBody(),
       ),
     );

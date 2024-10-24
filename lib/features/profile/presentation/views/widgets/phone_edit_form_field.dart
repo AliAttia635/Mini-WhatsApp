@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:mentor_academy_live_task/core/shared_widgets/custom_text_field.dart';
 
-class TextEditFormField extends StatelessWidget {
-  const TextEditFormField({super.key, required this.oldValue});
+class PhoneEditFormField extends StatelessWidget {
+  const PhoneEditFormField({super.key, required this.oldValue});
   final String oldValue;
-
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -23,6 +22,13 @@ class TextEditFormField extends StatelessWidget {
         child: CustomTextField(
           initialValue: oldValue,
           borderRadius: 24,
+          validator: (val) {
+            if (val!.isEmpty) {
+              return 'This Field is Required';
+            } else {
+              return null;
+            }
+          },
         ),
       ),
     );
