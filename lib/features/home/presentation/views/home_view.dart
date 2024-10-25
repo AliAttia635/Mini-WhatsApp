@@ -4,6 +4,7 @@ import 'package:mentor_academy_live_task/core/themes/color_app.dart';
 import 'package:mentor_academy_live_task/core/themes/styles.dart';
 import 'package:mentor_academy_live_task/features/calls/presentaion/views/calls_view.dart';
 import 'package:mentor_academy_live_task/features/chats/presentation/views/chat_view.dart';
+import 'package:mentor_academy_live_task/features/status/presentation/views/status_view.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({super.key});
@@ -17,7 +18,7 @@ class HomeViewState extends State<HomeView> {
 
   final List<Widget> _screens = [
     const ChatsView(),
-    Scaffold(),
+    const StatusView(),
     const CallsView(),
   ];
 
