@@ -19,8 +19,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
-  // ✅ الخطوة دي لازم تكون قبل Firebase.initializeApp
   await dotenv.load(fileName: ".env");
 
   await Firebase.initializeApp(
